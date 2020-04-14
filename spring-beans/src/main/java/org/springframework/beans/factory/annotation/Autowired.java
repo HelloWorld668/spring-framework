@@ -27,6 +27,9 @@ import java.lang.annotation.Target;
  * Spring's dependency injection facilities. This is an alternative to the JSR-330
  * {@link javax.inject.Inject} annotation, adding required-vs-optional semantics.
  *
+ * 将构造函数，字段，setter方法或config方法标记为由Spring的依赖项注入工具自动装配。 这是JSR-330注释的替代方法，增加了required-vs-optional语义。
+ *
+ *
  * <h3>Autowired Constructors</h3>
  * <p>Only one constructor of any given bean class may declare this annotation with the
  * {@link #required} attribute set to {@code true}, indicating <i>the</i> constructor
@@ -39,6 +42,9 @@ import java.lang.annotation.Target;
  * then a primary/default constructor (if present) will be used. If a class only
  * declares a single constructor to begin with, it will always be used, even if not
  * annotated. An annotated constructor does not have to be public.
+ *
+ *
+ *
  *
  * <h3>Autowired Fields</h3>
  * <p>Fields are injected right after construction of a bean, before any config methods

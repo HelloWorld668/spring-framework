@@ -41,3 +41,5 @@ out
 test-output
 atlassian-ide-plugin.xml
 .gradletasknamecache
+/mytest/build/libs/
+/mytest/build/tmp/
